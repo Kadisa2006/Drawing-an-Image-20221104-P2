@@ -6,7 +6,7 @@ int appWidth, appHeight;
 float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
 PImage pic;
 //
-size(500, 100); //Landscape
+size(1200, 675); //Landscape
 //Copy Display Orientation
 appWidth = width;
 appHeight = height;
