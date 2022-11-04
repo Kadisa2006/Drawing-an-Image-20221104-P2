@@ -6,13 +6,13 @@ int appWidth, appHeight;
 float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
 PImage pic;
 //
-size(1200, 675); //Landscape
+size(450, 675); //Landscape
 //Copy Display Orientation
 appWidth = width;
 appHeight = height;
 //
 //Population
-pic = loadImage("../Images Used/Diluc.jpg");
+pic = loadImage("../Images Used/Tommy-Shelby.jpg");
 imageBackgroundX = appWidth*0;
 imageBackgroundY = appHeight*0;
 imageBackgroundWidth = appWidth-1;
