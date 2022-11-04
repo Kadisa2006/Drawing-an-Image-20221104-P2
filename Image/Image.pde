@@ -1,4 +1,4 @@
-//Global Variables
+//BackGround Image Example
 int appWidth, appHeight;
 //
 size(1000, 800); //Landscape
