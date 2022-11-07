@@ -31,8 +31,8 @@ if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension
 if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
 //
-picWidthAdjusted = ;
-picHeightAdjusted = ;
+picWidthAdjusted = picWidth * imageWidthRatio;
+picHeightAdjusted = picHeight * imageHeightRatio;
 //
 //Population
 pic = loadImage("../Images Used/Tommy-Shelby.jpg");
