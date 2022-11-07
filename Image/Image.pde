@@ -1,5 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
+float smallerDimension, largerDimension;
+Boolean widthLarger=false, heightLarger=false;
 float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
 PImage pic;
 Boolean nightMode=true;
@@ -21,8 +23,13 @@ if ( picWidth >= picHeight ) { //True if Landscape or Square
 } else { //False if Portrait
   largerDimension = picHeight;
   smallerDimension = picWidth;
-  widthLarger = true;
+  heightLarger = true;
 }
+//
+if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
+if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
+if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
+if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
 //
 //Population
 pic = loadImage("../Images Used/Tommy-Shelby.jpg");
@@ -37,4 +44,5 @@ rect( imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundH
 // if () {} else {} for a Binary Choice, no single IF
 if (nightMode == false) tint(255, 128); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
 if (nightMode == true) tint(64, 64, 40); //RGB: Night Mode
+//
 image( pic, imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
