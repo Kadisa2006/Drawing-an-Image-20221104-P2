@@ -2,11 +2,27 @@
 int appWidth, appHeight;
 float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
 PImage pic;
+Boolean nightMode=true;
 //
-size(420, 630); //Landscape
+size(420, 630); //Portrait
 //Copy Display Orientation
 appWidth = width;
 appHeight = height;
+//
+//Aspect Ratio Calculations
+//Tommy-Shelby.jpg
+int picWidth = 1045;
+int picHeight = 1568;
+//Image Orientation: Landscape, Portrait, Square
+if ( picWidth >= picHeight ) { //True if Landscape or Square
+  largerDimension = picWidth;
+  smallerDimension = picHeight;
+  widthLarger = true;
+} else { //False if Portrait
+  largerDimension = picHeight;
+  smallerDimension = picWidth;
+  widthLarger = true;
+}
 //
 //Population
 pic = loadImage("../Images Used/Tommy-Shelby.jpg");
@@ -18,6 +34,7 @@ imageBackgroundHeight = appHeight-1;
 //Rectangle Layout and Image drawing to CANVAS
 rect( imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
 //
-tint(255, 0); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
-//tint(64, 64, 40); //RGB: Night Mode
+// if () {} else {} for a Binary Choice, no single IF
+if (nightMode == false) tint(255, 128); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
+if (nightMode == true) tint(64, 64, 40); //RGB: Night Mode
 image( pic, imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
