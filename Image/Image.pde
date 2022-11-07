@@ -1,6 +1,3 @@
-//Background Image Example
-//Reivew issues of overlapping colour and opacity
-//
 //Global Variables
 int appWidth, appHeight;
 float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
@@ -21,4 +18,6 @@ imageBackgroundHeight = appHeight-1;
 //Rectangle Layout and Image drawing to CANVAS
 rect( imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
 //
+tint(255, 0); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
+//tint(64, 64, 40); //RGB: Night Mode
 image( pic, imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
