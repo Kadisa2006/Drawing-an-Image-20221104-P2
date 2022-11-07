@@ -7,7 +7,7 @@ PImage pic;
 Boolean nightMode=true;
 //
 size(420, 630); //Portrait
-//Copy Display Orientation
+//Copy Display Algorithm from Hello World
 appWidth = width;
 appHeight = height;
 //
@@ -30,6 +30,9 @@ if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
 if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
+//
+picWidthAdjusted = ;
+picHeightAdjusted = ;
 //
 //Population
 pic = loadImage("../Images Used/Tommy-Shelby.jpg");
