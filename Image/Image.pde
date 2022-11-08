@@ -27,13 +27,26 @@ if ( picWidth >= picHeight ) { //True if Landscape or Square
   smallerDimension = picWidth;
   heightLarger = true;
 }
-//
+/* Older algorithm
 if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
 if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
-//
+ */
 float picWidthAdjusted, picHeightAdjusted;
+//Better Image Stretch Algorithm
+if ( appWidth >= picWidth ) {
+  picWidthAdjusted = picWidth;
+} else {
+  if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
+  if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
+}
+if ( appHeight >= picHeight ) {
+  picWidthAdjusted = picWidth;
+} else {
+  if ( widthLarger == true ) imageHeightRatio = largerDimension / largerDimension;
+  if ( heightLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
+}
 picWidthAdjusted = picWidth * imageWidthRatio;
 picHeightAdjusted = picHeight * imageHeightRatio;
 //
@@ -55,4 +68,5 @@ backgroundImageHeight = appHeight-1;
 if (nightMode == false) tint(255, 128); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
 if (nightMode == true) tint(64, 64, 40); //RGB: Night Mode
 //
+//image( pic, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
 image( pic, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
