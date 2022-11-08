@@ -13,6 +13,7 @@ appHeight = height;
 //
 //Aspect Ratio Calculations
 //Tommy-Shelby.jpg
+//Note: Dimensions are found in the image  file / Right Click / Properties / Details
 int picWidth = 1045;
 int picHeight = 1568;
 //Image Orientation: Landscape, Portrait, Square
@@ -42,9 +43,9 @@ imageBackgroundWidth = appWidth-1;
 imageBackgroundHeight = appHeight-1;
 //
 //Rectangle Layout and Image drawing to CANVAS
-rect( imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
+//rect( imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
 //
-// if () {} else {} for a Binary Choice, no single IF
+//if () {} else {} for a Binary Choice, no single IF
 if (nightMode == false) tint(255, 128); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
 if (nightMode == true) tint(64, 64, 40); //RGB: Night Mode
 //
