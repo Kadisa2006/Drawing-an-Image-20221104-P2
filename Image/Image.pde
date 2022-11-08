@@ -7,7 +7,7 @@ float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageH
 PImage pic;
 Boolean nightMode=false;
 //
-size(420, 630); //Portrait
+size(1045, 1568); //Portrait
 //Copy Display Algorithm from Hello World
 appWidth = width;
 appHeight = height;
@@ -15,8 +15,8 @@ appHeight = height;
 //Aspect Ratio Calculations
 //Tommy-Shelby.jpg
 //Note: Dimensions are found in the image file / Right Click / Properties / Details
-int picWidth = 1045;
-int picHeight = 1568;
+int picWidth = 400;
+int picHeight = 600;
 //Image Orientation: Landscape, Portrait, Square
 if ( picWidth >= picHeight ) { //True if Landscape or Square
   largerDimension = picWidth;
@@ -52,7 +52,7 @@ if ( appHeight >= picHeight ) {
 println(appWidth, imageWidthRatio);
 println(appHeight, imageHeightRatio);
 picWidthAdjusted = appWidth * imageWidthRatio;
-picHeightAdjusted = appHeight * imageHeightRatio;
+picHeightAdjusted = appWidth * imageHeightRatio;
 //
 //Developer verified variables
 println (appWidth, picWidth, picWidthAdjusted);
