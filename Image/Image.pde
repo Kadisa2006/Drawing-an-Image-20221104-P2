@@ -49,7 +49,8 @@ if ( appHeight >= picHeight ) {
 } else {
   //Image smaller than CANVAS needs separate algorithm
 }
-
+println(appWidth, imageWidthRatio);
+println(appHeight, imageHeightRatio);
 picWidthAdjusted = appWidth * imageWidthRatio;
 picHeightAdjusted = appHeight * imageHeightRatio;
 //
