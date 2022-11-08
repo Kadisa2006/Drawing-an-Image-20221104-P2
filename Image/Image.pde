@@ -2,7 +2,7 @@
 int appWidth, appHeight;
 float smallerDimension, largerDimension;
 Boolean widthLarger=false, heightLarger=false;
-float imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight;
+float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic;
 Boolean nightMode=true;
 //
@@ -37,10 +37,10 @@ picHeightAdjusted = picHeight * imageHeightRatio;
 //
 //Population
 pic = loadImage("../Images Used/Tommy-Shelby.jpg");
-imageBackgroundX = appWidth*0;
-imageBackgroundY = appHeight*0;
-imageBackgroundWidth = appWidth-1;
-imageBackgroundHeight = appHeight-1;
+backgroundImageX = appWidth*0;
+backgroundImageY = appHeight*0;
+backgroundImageWidth = appWidth-1;
+backgroundImageHeight = appHeight-1;
 //
 //Rectangle Layout and Image drawing to CANVAS
 //rect( imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
@@ -49,4 +49,4 @@ imageBackgroundHeight = appHeight-1;
 if (nightMode == false) tint(255, 128); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
 if (nightMode == true) tint(64, 64, 40); //RGB: Night Mode
 //
-image( pic, imageBackgroundX, imageBackgroundY, imageBackgroundWidth, imageBackgroundHeight);
+image( pic, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
