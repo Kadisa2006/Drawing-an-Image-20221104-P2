@@ -14,7 +14,7 @@ appHeight = height;
 //
 //Aspect Ratio Calculations
 //Tommy-Shelby.jpg
-//Note: Dimensions are found in the image   file / Right Click / Properties / Details
+//Note: Dimensions are found in the image file / Right Click / Properties / Details
 int picWidth = 1045;
 int picHeight = 1568;
 //Image Orientation: Landscape, Portrait, Square
@@ -33,8 +33,13 @@ if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension
 if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
 //
+float picWidthAdjusted, picHeightAdjusted;
 picWidthAdjusted = picWidth * imageWidthRatio;
 picHeightAdjusted = picHeight * imageHeightRatio;
+//
+//Developer verified variables
+println (appWidth, picWidth, picWidthAdjusted);
+println (appHeight, picHeight, picHeightAdjusted);
 //
 //Population
 pic = loadImage("../Images Used/Tommy-Shelby.jpg");
