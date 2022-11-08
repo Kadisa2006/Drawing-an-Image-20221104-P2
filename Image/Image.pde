@@ -2,6 +2,7 @@
 int appWidth, appHeight;
 float smallerDimension, largerDimension;
 Boolean widthLarger=false, heightLarger=false;
+float imageWidthRatio, imageHeightRatio;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic;
 Boolean nightMode=true;
