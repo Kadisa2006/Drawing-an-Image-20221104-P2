@@ -33,10 +33,10 @@ if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension
 if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
 if ( heightLarger == true ) imageHeightRatio = largerDimension / largerDimension;
  */
-float picWidthAdjusted, picHeightAdjusted;
+float picWidthAdjusted=0.0, picHeightAdjusted=0.0;
 //Better Image Stretch Algorithm
 if ( appWidth >= picWidth ) {
-  picWidthAdjusted = picWidth;
+  picWidthAdjusted = float(picWidth);
 } else {
   if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
   if ( heightLarger == true ) imageWidthRatio = smallerDimension / largerDimension;
@@ -47,8 +47,8 @@ if ( appHeight >= picHeight ) {
   if ( widthLarger == true ) imageHeightRatio = largerDimension / largerDimension;
   if ( heightLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
 }
-picWidthAdjusted = picWidth * imageWidthRatio;
-picHeightAdjusted = picHeight * imageHeightRatio;
+//picWidthAdjusted = picWidth * imageWidthRatio;
+//picHeightAdjusted = picHeight * imageHeightRatio;
 //
 //Developer verified variables
 println (appWidth, picWidth, picWidthAdjusted);
