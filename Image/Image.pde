@@ -15,8 +15,8 @@ appHeight = height;
 //Aspect Ratio Calculations
 //Tommy-Shelby.jpg
 //Note: Dimensions are found in the image file / Right Click / Properties / Details
-int picWidth = 800;
-int picHeight = 600;
+int picWidth = 1045;
+int picHeight = 1568;
 //Image Orientation: Landscape, Portrait, Square
 if ( picWidth >= picHeight ) { //True if Landscape or Square
   largerDimension = picWidth;
