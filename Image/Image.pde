@@ -7,6 +7,11 @@ float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageH
 PImage pic;
 Boolean nightMode=false;
 //
+void setup() {}//End setup
+void draw() {}//End draw
+void keyPressed() {}//End keyPressed
+void mousePressed() {}//End mousePressed
+//
 size(1045, 1568); //Portrait
 //Copy Display Algorithm from Hello World
 appWidth = width;
