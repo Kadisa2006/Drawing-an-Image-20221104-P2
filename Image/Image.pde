@@ -81,7 +81,7 @@ void setup()
   //
   //Population
   pic = loadImage("../Images Used/Landscape/Tommy-Shelby.jpg");
-  pic2 = loadImage("../Images Used/");
+  pic2 = loadImage("../Images Used/Landscape/Aubameyang.jpg");
   //pic3 = loadImage("");
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
@@ -90,7 +90,7 @@ void setup()
   topHalfX = appWidth * 1/4;
   topHalfY = appHeight * 1/20;
   topHalfWidth = appWidth * 1/2;
-  topHalfHeight = appHeight * 8/20;
+  topHalfHeight = appHeight * 13/20;
   bottomHalfX = appWidth *1/2;
   bottomHalfY = appHeight * 3/4;
   bottomHalfWidth = appWidth * 1/4;
