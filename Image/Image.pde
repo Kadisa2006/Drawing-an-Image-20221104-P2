@@ -10,15 +10,15 @@ int tintRed=64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85;
 //
 void setup()
 {
-  size(1045, 1568); //Portrait
+  size(800, 600); //Landscape
   //Copy Display Algorithm from Hello World
   appWidth = width;
   appHeight = height;
   //
   //Image Dimensions for Aspect Ratio
-  //Obi-wan-star-wars-jedi-23864621-800-600.jpg
+  //Tommy-Shelby.jpg
   //Note: Dimensions are found in the image file / Right Click / Properties / Details
-  int picWidth = 400;
+  int picWidth = 800;
   int picHeight = 600;
   //
   float smallerDimension, largerDimension;
@@ -63,7 +63,7 @@ void setup()
   println("Adjusted Image dimesnions are (stretch is goal):", picWidthAdjusted, picHeightAdjusted);
   //
   //Population
-  pic = loadImage("Tommy-Shelby.jpg");
+  pic = loadImage("../Images Used/Tommy-Shelby.jpg");
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
