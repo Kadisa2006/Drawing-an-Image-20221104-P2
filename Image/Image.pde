@@ -70,7 +70,7 @@ void setup()
   //
   //Teaching example, width is known to be larger
   float imageWidthRatio=0.0, imageHeightRatio=0.0;
-  float imageHeightRatio2=0.0;
+  float imageWidthRatio2=0.0, imageHeightRatio2=0.0;
   //Better Image Stretch Algorithm, smaller image to larger CANVAS
   if ( appWidth >= picWidth ) {
     picWidthAdjusted = appWidth;
