@@ -73,6 +73,9 @@ void setup()
     //Image smaller than CANVAS needs separate algorithm
   }
   //
+  //Image is either larger or smaller than rect (including CANVAS)
+  
+  //
   //Verifying Variable Values after algoroithm
   println("App Width:", appWidth, " and App Height:", appHeight);
   println("Larger Image dimension is:", largerDimension);
