@@ -99,9 +99,9 @@ void setup()
     imageHeightRatio2 = smallerDimension2 / largerDimension2;
     picHeightAdjusted2 = picWidthAdjusted2 * imageHeightRatio2;
   } else { //Portrait is TRUE, heightLarger2==true
-    picWidthAdjusted2 = topHalfWidth;
-    //imageHeightRatio2 = smallerDimension2 / largerDimension2;
-    //picHeightAdjusted2 = picWidthAdjusted2 * imageHeightRatio2;
+    picHeightAdjusted2 = topHalfWidth;
+    imageWidthRatio2 = smallerDimension2 / largerDimension2;
+    picWidthAdjusted2 = picHeightAdjusted2 * imageWidthRatio2;
   }
   //
   //Verifying Variable Values after algoroithm
